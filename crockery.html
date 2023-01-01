@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Crockery Product</title>
+       <link rel="stylesheet" href="crockery.css">
+       <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: green;
+    padding: 24px;
+}
+nav{
+    background-color:  lime;
+    display: grid;
+    place-items: center;
+}
+nav ul{
+    list-style: none;
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color:#000;
+    transition: 0.4s ease-in ;
+    font-size: 18px;
+}
+nav ul a:hover{
+    background-color: green;
+    color: aliceblue;
+}
+.items{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 5px 7px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+
+}
+.itemss{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 30px 30px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.itemsss{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 30px 30px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.itemsc{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 30px 30px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.itemscc{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 30px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.itemn{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+h3{
+    text-align: center;
+    text-decoration: solid black;
+    font-size: x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+
+}
+.item img{
+    width: 80%;
+    height: 500 px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.item img:hover{
+    transform: scale(1.08);
+}
+.item h4{
+    padding: 8px;
+    text-align: center;
+}
+.item button{
+    padding: 6px 30 px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s all;
+}
+.item button:hover{
+    transform: scale(1.08);
+
+}
+@media screen  and (max-width: 1000px){
+    .items{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen  and (max-width: 1000px){
+    .itemn{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen  and (max-width: 1000px){
+    .itemss{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen  and (max-width: 1000px){
+    .itemsss{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen  and (max-width: 1000px){
+    .itemsc{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen  and (max-width: 1000px){
+    .itemscc{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+       </style>
+
+</head>
+<body>
+    <h1> Crockery Product</h1>
+    <nav>
+        <ul>
+            <a href="file:///C:/Users/Dell/Desktop/New%20folder/new%20project.html"><li>Home</li></a>
+            <a href="file:///C:/Users/Dell/Desktop/New%20folder/new%20project.html"><li>Order</li></a>
+            <a href="file:///C:/Users/Dell/Desktop/New%20folder/new%20project.html"><li>Near</li></a>
+            <a href="file:///C:/Users/Dell/Desktop/New%20folder/new%20project.html"><li>About</li></a>
+        </ul>
+    </nav>
+    <h3> BOWLS</h3>
+    <hr>
+    <section class="itemn">
+
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\bowl set 01\IMG_20220224_155343.jpg" wudth="50%"height="50%" >
+            <h4> Bowl </h4>
+            <h4>  price:-600</h4>
+            <button> <a href="file:///C:/Users/Dell/Desktop/Web%20dev/pre%20work/Payment_Form.html">Order</a></button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\bowl set 02\IMG_20220224_160443.jpg" >
+            <h4> Fish Degin Bowl</h4>
+            <h4>  price:-600</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\bowl set 03\IMG_20220224_160648.jpg" >
+            <h4> Squar Shape Bowl</h4>
+            <h4>  price:-749</h4>
+            <button>Order</button>
+        </div>
+    </section>
+        <hr>
+        <h3> CUP & BEAR MUG </h3>
+        <hr> 
+
+    <section class="items">
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\juice mug\Juice mug.jpj.jpg" width="100%"height="70%"> 
+            <h4> Juice Mug </h4> 
+            <h4>  price:-599</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup set 01\ovel cup shape.jpg" width="100" height="67%">
+            <h4> Oval shape tea Cup</h4>
+            <h4>  price:-549</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup set 02\IMG_20220215_005600.jpg" width="100%"height="70%">
+            <h4> tea cup</h4>
+            <h4>  price:-599</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup set 04\IMG_20220215_014004.jpg" width="100%"height="70%" >
+            <h4> Juice Mug</h4>
+            <h4>  price:-549</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup set 06\IMG_20220215_012818.jpg"  width="100%"height="57%">
+            <h4> Tea Cup</h4>
+            <h4>  price:-599</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup set 07\IMG_20220214_010851.jpg" width="100%" height="57%">
+            <h4> Pickel container</h4>
+            <h4>  price:-999</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup set 09\IMG_20220214_014103.jpg" width="100%" height="67%">
+            <h4> Juice cup</h4>
+            <h4>  price:-599</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup set 10\IMG_20220214_015614.jpg" width="100%" height="67%">
+            <h4> tea cup</h4>
+            <h4>  price:-599</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup set 11\IMG_20220214_023325.jpg" width="100%" height="60%">
+            <h4> Simple Tea cup</h4>
+            <h4>  price:-599</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup set 13\IMG_20220223_003349.jpg" width="100%" height="60%">
+            <h4> Ovel tea cup</h4>
+            <h4>  price:-599</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup set 14\IMG_20220223_003853.jpg"width="100%" height="53%">
+            <h4> plane-Tea Cup</h4>
+            <h4>  price:-549<h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup set 15\IMG_20220223_004943.jpg" width="100%" height="57%">
+            <h4> Cup</h4>
+            <h4>  price:-599</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup set 16\IMG_20220223_005712.jpg" width="100%" height="50%">
+            <h4> Soft-drink Mug</h4>
+            <h4>  price:-599</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup plates\IMG_20220224_202656.jpg" width="100%" height="50%">
+            <h4> Cup plate</h4>
+            <h4>  price:-599</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\cup set 18\IMG_20220223_012042.jpg" width="100%" height="50%">
+            <h4> Tea Cup</h4>
+            <h4>  price:-599</h4>
+            <button>Order</button>
+        </div>
+    </section>
+        <hr>
+        <h3> STAINLESS  STEEL CONTAINER</h3>
+        <h4></h4>
+        <hr>
+   
+    <section class="itemss">
+
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\glass countainer 01 set 4\IMG_20220214_010435.jpg" width="100" height="70%">
+            <h4> Glass container</h4>
+            <h4>  price:-449</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\glass countainer 05 set single\IMG_20220224_153036.jpg" width="100%" height="65%">
+            <h4> Stainless Steel Container </h4>
+            <h4>  price:-349</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\glass countainer 06 set single\IMG_20220224_153525.jpg" width="100%" height="75%">
+            <h4>  Stainless Steel box</h4>
+            <h4>  price:-369</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\glass countainer 07 set 2\IMG_20220224_154448.jpg" width="100%" height="75%">
+            <h4> Stainless Steel</h4>
+            <h4>  price:-499</h4>
+            <button>Order</button>
+        </div>
+    </section>
+    
+        <hr>
+        <h3> SALT AND  PAPPER SAKER</h3>
+        <hr>
+    <section class="itemsss"> 
+
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\sault&spicy 02\IMG_20220223_162029.jpg" width="100%" height="57%">
+            <h4> Salt and Papper saker combo in Rabit-Shape </h4>
+            <h4>  price:-549</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\sault&spicy 03\IMG_20220223_162857.jpg" width="100%" height="57%">
+            <h4> Salt and Papper saker combo in Elephant-Shape</h4>
+            <h4>  price:-549</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\sault&spicy 04\IMG_20220223_173626.jpg" width="100%" height="57%">
+            <h4> Salt and Papper saker combo in Cylindrical-Shape </h4>
+            <h4>  price:-499</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\sault&spicy 05\IMG_20220223_183723.jpg" width="100%" height="57%">
+            <h4> Salt and Papper saker combo in malti-Shape</h4>
+            <h4>  price:-539</h4>
+            <button>Order</button>
+        </div>
+    </section> 
+    
+        <hr>
+        <h3> SHOTS </h3>
+        <hr>
+    <section class="itemsc">
+
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\shots 01\IMG_20220225_201942.jpg" width="100%" height="57%">
+            <h4> One  pack Shots glass</h4>
+            <h4>  price:-399</h4>
+            <button>Order</button>
+        </div>
+        
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\shots 02\IMG_20220225_202555.jpg" width="100%" height="57%">
+            <h4>  One-Half pack Shots glass</h4>
+            <h4>  price:-399</h4>
+            <button>Order</button>
+        </div>
+        
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\shots 03\IMG_20220225_224639.jpg" width="100%" height="60%">
+            <h4> Two-pack Shots glass </h4>
+            <h4>  price:-399</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\shots 04\IMG_20220225_222606.jpg" width="100%" height="65%">
+            <h4>  One-Pack Glass</h4>
+            <h4>  price:-399</h4>
+            <button>Order</button>
+        </div>
+    </section>
+        <hr>
+        <h3> WATER AND SOFT-DRINK GLASS </h3>
+        <hr>
+    <section class="itemscc">
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\water glass  01\IMG_20220214_025056.jpg" width="100%" height="65%">
+            <h4>  Designing Water glass </h4>
+            <h4>  price:-499</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\water glass 02\IMG_20220223_013037.jpg" width="100%" height="75%">
+            <h4> Lemon Water Glass</h4>
+            <h4>  price:-599</h4>
+            <button>Order</button>
+        </div>
+       
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\water glass 03\IMG_20220223_013614.jpg" width="100%" height="67%">
+            <h4> Soft drink Glass</h4>
+            <h4>  price:-699</h4>
+            <button>Order</button>
+        </div>
+    
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\water glass 04\IMG_20220223_014028.jpg"width="70%" height="61%">
+            <h4> High-quality  Water-Glass</h4>
+            <h4>  price:-499</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\water glass 08\IMG_20220224_165145.jpg" width="100%" height="61%">
+            <h4> Light-Weight Water glass</h4>
+            <h4>  price:-699</h4>
+            <button>Order</button>
+        </div>
+   
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\water glass 09\IMG_20220224_170259.jpg"width="100%" height="61%">
+            <h4> Squar-shape Juice glass</h4>
+            <h4>  price:-499</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\water glass 10\IMG_20220224_173712.jpg" width="100%" height="50%">
+            <h4> Light-weight Cold-Drink glass</h4>
+            <h4>  price:-499</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\water glass 11\IMG_20220224_181353.jpg" width="100%" height="60%">
+            <h4> Fruit-Juice glass</h4>
+            <h4>  price:-499</h4>
+            <button>Order</button>
+        </div>  
+        <div class="item">
+            <img src= "C:\Users\Dell\Desktop\01\water glass 12\IMG_20220224_182435.jpg" width="100%" height="60%">
+            <h4>  Water glass</h4>
+            <h4>  price:-499</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\water glass 14\IMG_20220224_191735.jpg" width="100%" height="70%">
+            <h4> heigh-Quality Cold-Drink glass</h4>
+            <h4>  price:-500</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\water glass 17\IMG_20220224_201235.jpg"width="100%" height="70%">
+            <h4> Dimond-shape  Soft-Drink glass</h4>
+            <h4>  price:- 500</h4>
+            <button>Order</button>
+        </div>
+    
+        <div class="item">
+            <img src="C:\Users\Dell\Desktop\01\water glass waith jug\IMG_20220224_184014.jpg" width="100%" height="80%">
+            <h4> Fish-Desgin Jug and Glass Set</h4>
+            <h4>  price:-999</h4>
+            <button>Order</button>
+        </div>
+
+    </section>
+    
+
+</body>
+</html>

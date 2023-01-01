@@ -1,0 +1,534 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&
+    family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400;1,800;1,900&family=Poppins:ital,wght@0,400;0,600;1,900&display=swap" rel="stylesheet">
+    <script>
+        alert( "Do you need any more notification from this  website")
+    </script> 
+    <style>
+        *{
+             padding: 0;
+             margin:0;
+             box-sizing: border-box;
+             font-family: 'poppins', sans-serif;
+             scroll-behavior: smooth;
+             list-style: none;
+             text-decoration: none;
+        }
+         :root{
+             --main-color: #ff702a;
+             --text-color: #fff;
+             --bg-color: #1e1c2a;
+             --big-font: 5rem;
+             --h2-font: 2.25rem;
+             --p-font: 0.9rem;
+        }
+        ::selection{
+             background: var(--main-color);
+             color: #fff;
+        }
+         body{
+             color: var(--text-color);
+             background: var(--bg-color);
+        }
+        header{
+             position: fixed;
+             top: 0;
+             right: 0;
+             width: 100%;
+             z-index: 1000;
+             align-items:center;
+             display: flex;
+             justify-content: space-between;
+             padding: 30px 170px;
+             background: var(--bg-color);
+        }
+        .logo{
+             color:var(--main-color);
+             font-weight: 600;
+             font-size: 2.4rem;
+        }
+        .navbar{
+            display: flex;
+        }
+        .navbar a{
+            color: var(--text-color);
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            font-weight: 500;
+        }
+        .navbar a:hover{
+
+            color: var(--main-color);
+            transition: .4s;
+        }
+        #menu-icon{
+            font-size: 4rem;
+            cursor: pointer;
+            display: none;
+        }
+        section{
+            padding: 70px 17%;
+        }
+        .home{
+            width: 100%;
+            min-height: 90vh;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            -ms-grid-row-align:  1.5rem ;
+            align-items: center;
+        }
+        .home-img img{
+            max-width: 100%;
+            width: 1000px;
+            height: auto;
+            border-radius: 0.5rem;
+        }
+        .home-text h1{
+            font-size: var(--big-font);
+            color: var(--main-color);
+        }
+        .home-text h2{
+            font-size: var(--h2-font);
+            margin: 1rem 0 2rem;
+        }
+        .btn{
+            display: inline-block;
+            padding: 10px 20px;
+            background: var(--main-color);
+            color: #fff;
+            border-radius: 0.5rem;
+        }
+        .btn:hover{
+            transform: scale(1.2) translateY(10px);
+            transform: .4s;
+
+        }
+        .about{
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            -ms-grid-row-span: 1.5rem;
+            align-items: center;
+        }
+        .about-img img{
+            width: 900px;
+            height: auto;
+            border-radius: 0.5rem;
+            align-items: right;
+            justify-content: center;
+            margin-right: 30px;
+
+        }
+        .about-text div{
+            color:var(--main-color) ;
+            font-weight: 600;
+        }
+        .about-text h2{
+            font-size: var(--h2-font);
+        }
+        .about-text p{
+            margin: 0.8rem 0 1.8rem;
+            line-height: 1.7;
+        }
+        .heading{
+            text-align: center;
+        }
+        .heading span{
+            color: var(--main-color);
+            font-weight: 600;
+            text-align: center;
+        }
+        .heading h2{
+            font-size: var(--h2-font);
+            text-align: center;
+        }
+        .menu-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+            grid-gap: 1.5rem ;
+            align-items: center;
+        }
+        .box{
+            position: relative;
+            margin-top: 4rem;
+            height:auto;
+            display: flex;
+            flex-direction: center;
+            align-items: center;
+            justify-content: center;
+            background:bisque ;
+            padding: 20px;
+            border-radius: 0.5rem ;
+        }
+        .box-img{
+            width: 220px;
+            height: 220px;
+            position: center;
+            padding-bottom: 20px;
+
+        }
+        .box-img img{
+            width: 300px;
+            height: 300px;
+            padding: 60px;
+            position: center;
+            
+        }
+        .box h2{
+            font-size: 1.3rem;
+            color: var(--bg-color);
+        }
+        .box h3{
+            color: var(--bg-color);
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 4px 0 10px;
+        }
+        .box span{
+            font-size: var();
+            color: var(--main-color);
+            font-weight: 600;
+
+        }
+        .box .bx{
+            background: var(--main-color);
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 20px;
+            padding: 7px 10px;
+            border-radius: 0 0.5rem 0 0.5rem ;
+        }
+        .service-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+            grid-gap: 1rem;
+            margin:  2rem;
+        }
+        .sbox{
+            text-align: center;
+            padding: 20px 30px ;
+            grid-template-columns: repreat(3,1fr);
+        }
+        .s-box img{
+            width: 90px;
+            align-items: center;
+            margin: 50px;
+        }
+        .s-box h3{
+            margin: 4px 0 10px;
+            color: var(--main-color);
+            font-size: 1.2rem;
+        }
+        .s-box p{
+            line-height: 1.0;
+        }
+        .cta{
+            background: #feeee7;
+            padding: 100px 0;
+            text-align: center;
+            width: 70%;
+            margin: 100px auto;
+            border-radius: 10px;
+        }
+        .cta h2{
+            font-size: 2rem;
+            color: var(--bg-color);
+            margin-bottom: 30px;
+        }
+        .main{
+            display: flex;
+            flex-wrap:wrap-reverse;
+        }
+        .footer{
+            padding: 9px 0;
+
+        }
+        .col{
+            width: 20%;
+        }
+        .col h4{
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .col h4::before{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 50px;
+            left: 0;
+            bottom: -8px;
+            background: var(--main-color);
+
+        }
+        .col ul li:not( last-child){
+            margin-bottom: 15px;
+
+        }
+        .col ul li a{
+            color: #9897a9;
+            font-size: 1.0rem;
+            display: block;
+            text-transform: capitalize;
+            transition: .4s;
+        }
+        .col ul li a:hover{
+            color: var(--text-color);
+            transform: translateX(-12px);
+        }
+        .col.social a{
+            height: 60px;
+            width: 60px;
+            background: var(--main-color);
+            color: var(--text-color);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            border-radius: 100%;
+            transition: .4s;
+            justify-content: space-between;
+        }
+        .col.social{
+            width: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .col.social a:hover{
+            transform: scale(1.2);
+            color: var(--bg-color) ;
+            background: var(--text-color);
+
+        }
+        @media  (max-width: 1560px){
+            header{
+
+                padding: 15px 40;
+            }
+           .root{
+                --bg-font:3.5rem;
+                --h2-font:2rem;
+            }
+        }
+        @media(max-width: 1140px){
+            section{
+                padding: 50px 8%;
+            }
+            #meenu-icon{
+                display:initial;
+                color:var(--text-color)
+            }
+            header.novbar{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                background: #2b2640;
+                transition: .3s;
+
+            }
+            header.navbar.active{
+                top: 70px;
+            }
+            .navbar a{
+                padding: 1.5rem;
+                display: block;
+            }
+        }
+        @media(max-width: 720px){
+            header{
+                padding: 10px 16px;
+            }
+            .home{
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .about{
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .about-img{
+                order:2;
+            }
+            ::selection{
+                padding: 100px 7%;
+            }
+       }
+       @media(max-width: 720px){
+        .col{
+            width:100%;
+        }
+       }
+
+
+    </style>
+ 
+
+</head>
+<body> 
+    <header>
+        <a href="#" class="logo">Crockery</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+
+        <ul class="navbar">
+            <li><a href=file:///C:/Users/Dell/Desktop/New%20folder/new%20project.html>Home</a></li>
+            <li><a href=file:///C:/Users/Dell/Desktop/New%20folder/new%20project.html>About</a></li>
+            <li><a href=file:///C:/Users/Dell/Desktop/New%20folder/crockery.html>product</a></li>
+            <li><a href=file:///C:/Users/Dell/Desktop/New%20folder/new%20project.html>Service</a></li>
+            <li><a href=file:///C:/Users/Dell/Desktop/html%20project/CONTACT%20FORM.html>Contact</a></li>
+        </ul>
+    </header>
+    <!----- home start---->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Full Website</h1>
+            <h2>Crockery The <br> Beuty Of The Kitchen </h2>
+            <a href="#" class="btn"> Today's Trend</a>
+        </div> 
+        <div class="home-img">
+            <img src="C:\Users\Dell\Desktop\crokery.jpg">
+        </div>
+    </section>
+    <!------about start---->
+    <section clas="about" id="about">
+        <div class="about-img">
+            <img src="C:\Users\Dell\Desktop\IMG_20220223_162029.jpg">
+        </div>
+        <div class="about-text">
+            <div>About Us</div>
+            <h2>YOUR SEARCH FOR THE BEST<br> CROCKERY STORE ENDS HERE!!!</h2>
+            <p>Lorem ipsum dolorbjhfuikljpujkhct5ewfui
+                 Nihil,bjkkln.jlohkugkjguoh;ljopklhuig </p>
+            <a href="#" class="btn"> Today's Trend</a>
+        </div>
+    </section>
+    <!------- menu start------>
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>CRAMIC TABLE WARE</span>
+            <h2> Special Offers</h2>
+        </div>
+        <div class="menu-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="C:\Users\Dell\Desktop\New folder\VERACollection_25_700x.webp">
+                </div>
+                <h2> VERA Black Plate</h2>
+                <h3> good quality</h3>
+                <span>$ 700.00</span>
+                <i class='bx bxs-cart'></i>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="C:\Users\Dell\Desktop\New folder\IMG_20220225_222606.jpg" >
+                   </div>
+                   <h2> wisky CUP</h2>
+                   <h3> good quality</h3>
+                   <span>$ 499.00</span>
+                   <i class='bx bxs-cart'></i>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="C:\Users\Dell\Desktop\IMG_20220223_173626.jpg">
+                   </div>
+                   <h2> Salt and Spicy saker</h2>
+                   <h3> good quality</h3>
+                   <span>$ 499.00 </span>
+                   <i class='bx bxs-cart'></i>
+            </div>
+        </div>
+    </section>
+    <!----service start---->
+    <section class="service" id="service">
+        <div class="heading"> 
+            <span>Service</span>
+            <h2>We provide best quality of Crockerys</h2>
+        </div>
+        <div class="service-container"> 
+            <div class="s-box">
+                <img src="C:\Users\Dell\Desktop\New folder\s1.png">
+                <h3> Order </h3>
+                <p> There are many variation of passage of Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                soluta in impedit excepturi quo totam dolorem. Nostrum aspernatur reiciendis saepe </p>
+            </div>
+            <div class="s-box">
+                <img src="C:\Users\Dell\Desktop\New folder\s2.png">
+                <h3> shipping </h3>
+                <p> There are many variation of passage of Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                soluta in impedit excepturi quo totam dolorem. Nostrum aspernatur reiciendis saepe </p>
+            </div>
+            <div class="s-box">
+                <img src="C:\Users\Dell\Desktop\New folder\s3.png">
+                <h3> Delivered </h3>
+                <p> There are many variation of passage of Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                soluta in impedit excepturi quo totam dolorem. Nostrum aspernatur reiciendis saepe </p>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <h2> That Empty Place in your kitchen,<br> deserves the best Crockery</h2>
+        <a href="#" class="btn"> Let's talk</a>
+    </section>
+    <section id="contact">
+        <div class="footer">
+            <div class="main">
+                <div class="col">
+                    <h4>Menu Links</h4>
+                    <ul>
+                        <li> <a href="#"> Home</a></li>
+                        <li> <a href="#"> About</a></li>
+                        <li> <a href="#"> Product</a></li>
+                        <li> <a href="#"> Service</a></li>
+                        <li> <a href="#"> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Out Service</h4>
+                    <ul>
+                        <li> <a href="#"> Web Design</a></li>
+                        <li> <a href="#"> Web Development</a></li>
+                        <li> <a href="#"> Marketing</a></li>
+                        <li> <a href="#"> Product Management</a></li>
+                        <li> <a href="#"> Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li> <a href="#"> About Use</a></li>
+                        <li> <a href="#"> Delivery Information</a></li>
+                        <li> <a href="#"> Privacy policy</a></li>
+                        <li> <a href="#"> Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <h4>Contact Us</h4>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---Jvascript-->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
